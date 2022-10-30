@@ -3,7 +3,7 @@
  * @param {string} s Roman number
  * @return {number} Integer
  */
-const _romanToInt = function (s) {
+const romanToInt_SwitchCase = function (s) {
   let output = 0;
 
   for (let i = 0; i < s.length; i++) {
@@ -86,10 +86,7 @@ const romanToInt = function (s) {
   return output;
 };
 
-
-console.log(romanToInt('I') === 1);
-console.log(romanToInt('III') === 3);
-console.log(romanToInt('V') === 5);
-console.log(romanToInt('LVIII') === 58);
-console.log(romanToInt('MCCCIV') === 1304);
-console.log(romanToInt('MCMXCIV') === 1994);
+module.exports = {
+  romanToInt_SwitchCase: romanToInt_SwitchCase,
+  romanToInt: romanToInt,
+}

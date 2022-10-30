@@ -14,20 +14,6 @@ const twoSum = function (nums, target) {
   }
 };
 
-
-// Example 1:
-console.log(twoSum([2, 7, 11, 15], 9).toString() == [0, 1].toString());
-
-// Example 2:
-console.log(twoSum([3, 2, 4], 6).toString() == [1, 2].toString());
-
-// Example 3:
-console.log(twoSum([3, 3], 6).toString() == [0, 1].toString());
-
-
-// -----------------------------------------
-
-
 /**
  * Improved version with time complexity O(n).
  *  
@@ -52,7 +38,7 @@ console.log(twoSum([3, 3], 6).toString() == [0, 1].toString());
  * @param {number} target - integer
  * @return {number[]} - two numbers such that they add up to target
  */
-const twoSum_better = function (nums, target) {
+const twoSum_map = function (nums, target) {
   const map = {};
 
   for (let i = 0; i < nums.length; i++) {
@@ -68,12 +54,7 @@ const twoSum_better = function (nums, target) {
   }
 };
 
-
-// Example 1:
-console.log(twoSum_better([2, 7, 11, 15], 9).toString() == [0, 1].toString());
-
-// Example 2:
-console.log(twoSum_better([3, 2, 4], 6).toString() == [1, 2].toString());
-
-// Example 3:
-console.log(twoSum_better([3, 3], 6).toString() == [0, 1].toString());
+module.exports = {
+  twoSum: twoSum,
+  twoSum_map: twoSum_map
+}

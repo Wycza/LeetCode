@@ -1,0 +1,25 @@
+{
+  "name": "wycza-leetcode",
+  "version": "1.0.0",
+  "description": "LeetCode algorithm solutions",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wycza/LeetCode.git"
+  },
+  "keywords": [
+    "LeetCode",
+    "Algorithms"
+  ],
+  "author": "Mateusz Wyczawski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wycza/LeetCode/issues"
+  },
+  "homepage": "https://github.com/Wycza/LeetCode#readme",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  }
+}
